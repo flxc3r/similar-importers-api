@@ -1,3 +1,5 @@
+-- MYSQL
+
 CREATE DATABASE IF NOT EXISTS similar_importers;
 
 use similar_importers;
@@ -6,7 +8,6 @@ DROP TABLE IF EXISTS `importers_products`;
 DROP TABLE IF EXISTS `distances`;
 DROP TABLE IF EXISTS `importers`;
 DROP TABLE IF EXISTS `products`;
-
 
 CREATE TABLE `importers` (
 	`importer_id` INT NOT NULL,
