@@ -1,2 +1,4 @@
 secrets/
 .ipynb_checkpoints/
+*.pkl
+data/distance_matrix_with_imp_ids.csv
