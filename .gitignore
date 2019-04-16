@@ -4,3 +4,4 @@ secrets/
 data/distance_matrix_with_imp_ids.csv
 ignore_me/
 .vscode/
+3_zappa_api/venv/
