@@ -5,7 +5,7 @@ import pymysql
 import datetime
 
 from _functions import _get_importer, _get_importer_products, _get_importer_similar
-from _functions import _get_product , _get_product_importers #, _get_importer_similar 
+from _functions import _get_product , _get_product_importers
 
 @app.route('/')
 def hello_world():
