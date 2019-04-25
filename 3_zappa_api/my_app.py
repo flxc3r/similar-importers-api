@@ -4,7 +4,7 @@ app = Flask(__name__)
 import pymysql
 import datetime
 
-from _functions import _get_importer, _get_importer_products, _get_importer_similar
+from _functions import _get_importer, _get_importer_products, _get_importer_similar, _get_similar_importer_products
 from _functions import _get_product , _get_product_importers
 
 @app.route('/')
@@ -25,6 +25,10 @@ def get_importer_products(importer_id):
 @app.route('/importer/<int:importer_id>/similar', methods = ['GET'])
 def get_importer_similar(importer_id):
     return _get_importer_similar._get_importer_similar(importer_id)
+
+@app.route('/importer/<int:importer_id>/similar/products', methods = ['GET'])
+def get_similar_importer_products(importer_id):
+    return _get_similar_importer_products._get_similar_importer_products(importer_id)
 
 
 ### products
